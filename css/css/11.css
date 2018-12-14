@@ -1,0 +1,114 @@
+
+
+.container{    
+    margin:20px;
+
+    border: 1px solid black; 
+    padding:20px;
+    display:grid;
+    
+    grid-template-columns: 300px 200px auto; /*only 3 columns*/
+    grid-template-columns: min-content max-content; /*2nd col 3la 2d el data*/
+    grid-template-columns: 50px 1fr 2fr; /*by2asem el msafa el ba2ya 1:2 ratio*/
+    grid-template-columns: 50px 50px minmax(300px,500px);
+    grid-template-columns: repeat(2,25% 25%);
+    grid-template-columns: 50px 50px fit-content(20px); /*if content is bigger than 20px it wraps*/
+    
+    /*rows takes the same values*/
+    grid-template-rows: repeat(2,100px 50px);
+
+    grid-auto-flow:row; 
+}
+.container2{    
+    margin:20px;
+
+    border: 1px solid black; 
+    padding:20px;
+    display:grid;
+
+    grid-auto-flow:column; /*gnb ba3d */
+    grid-auto-flow:row; /*t7t ba3d*/
+    
+    grid-template-rows:80px 80px;
+    grid-template-columns:50px 50px;
+    grid-auto-rows: 200px; /*automatic row width if 7aga zyada*/
+    grid-auto-columns: 200px; /*automatic column width if 7aga zyada*/
+
+    gap: 10px 20px; /*spaces between rows, cols*/
+    justify-content: center;
+    justify-content: end; /*related to language used*/  
+    justify-content: left; /*regardless of language direction*/
+
+    height: 500px;
+    align-content: center;
+
+    justify-items: center; 
+    align-items: center;    
+
+}
+.red{
+    background-color: red;
+
+
+}
+.blue{
+    background-color: blue;
+   
+
+}
+.green{
+    
+    background-color: green;
+
+}
+.yellow{
+    background-color: yellow;
+    
+}
+.container3{    
+    margin:20px;
+
+    border: 1px solid black; 
+    padding:20px;
+    display:grid;    
+    grid-template-rows:80px;
+    grid-template-columns:repeat(auto-fill,100px);   
+    grid-template-columns:repeat(auto-fit,100px);   
+
+    justify-content: center;
+    align-content: center;
+
+    grid-template-columns: [col-1-start] 50px [col-1-end col-2-start] 50px [col-2-end];
+    grid-template-rows: [row-1-start] 50px [row-1-end row-2-start] 50px [row-2-end];
+    grid-template-areas: "area1 area2"
+                         ". area4";
+
+    grid-auto-columns: 100px;
+
+}
+.red2{
+    background-color: red;
+    grid-column-start: col-1-start;
+    grid-column-end: col-2-end;
+    grid-row-start:1;
+    
+
+}
+.blue2{
+    background-color: blue;
+   
+
+}
+.green2{
+
+    background-color: green;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    align-self: center;
+
+}
+.yellow2{
+    background-color: yellow;
+    align-self: center;
+    justify-self: center;
+}

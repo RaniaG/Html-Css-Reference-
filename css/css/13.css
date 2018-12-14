@@ -1,0 +1,90 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+}
+div#one{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    background-image: linear-gradient(red 100px,black 200px); /*red ends at 100px & black starts at 200px*/
+    background-image: linear-gradient(to top right,red 0,black 35%); /* red starts at 0 & black starts at 35%*/
+    background-image: linear-gradient( 60deg, green, transparent);
+    background-clip: padding-box; /* or background-origin: border-box; */
+}
+div#two{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    /*linear-gradient(45deg,#561A16 50%,#A9423B 50%)*/
+    background-image: linear-gradient(45deg,#6A201B 25%,transparent 25%),
+    linear-gradient(315deg,#6A201B 25%,transparent 25%),
+    linear-gradient(135deg,transparent 50%, #561A16 50%),
+    linear-gradient(45deg,#A7332B 50%,#D45D55 50%);
+    background-clip: padding-box;
+    background-position: 10px 0,-10px 0,0 0,0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+}
+div#three{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    background-image: radial-gradient(red,blue);
+    background-clip: padding-box;
+    background-image: radial-gradient(at top right,red 50%, blue 50%);
+    background-image: radial-gradient(circle at 100px 100px ,red , blue );
+    background-image: radial-gradient(ellipse 20px 50px at 100px 100px ,red , blue ); /*size of ellipse at position*/
+    background-image: radial-gradient(ellipse farthest-corner at 100px 100px , red,blue);
+    background-image: radial-gradient(circle  at center, red 10%,transparent 10%);
+
+
+}
+div#four{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    background-clip: padding-box;
+    background-color: #708090;
+    background-image: radial-gradient(circle 50px at 0 50%, transparent 20%,#9BA6B2 20%,#9BA6B2 40%,transparent 40%)
+       ,radial-gradient(circle 50px at 100% 50%, transparent 20%,#9BA6B2 20%,#9BA6B2 40%,transparent 40%);
+
+    background-position: 0 0,0 -30px;
+    background-repeat: repeat;
+    background-size: 50px 60px;
+
+}
+div#five{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    background-clip: padding-box;
+    background-image: repeating-linear-gradient(red 0px, red 20px,blue 20px, blue 30px,green 50px, green 60px,yellow 60px , yellow 80px);
+    background-image: repeating-radial-gradient(red 0px, red 20px,blue 20px, blue 30px,green 50px, green 60px,yellow 60px , yellow 80px);
+   
+}
+
+
+
+div.filters{
+    border: 15px dashed black;
+    width:400px;
+    height:400px;
+    background-clip: padding-box;
+    background-image: url("../images/car.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 0.5; */
+    filter:blur(2px);
+    filter: brightness(150%);
+    filter: contrast(150%);
+    filter: drop-shadow(10px 10px 5px blue);
+    filter: grayscale(60%);
+    filter: sepia(100%); /*brownish grayscale*/
+    filter: hue-rotate(50deg); /*hue circle*/
+    filter: invert(100%);
+    filter: opacity(50%);
+    filter: saturate(500%) drop-shadow(10px 10px 5px blue);
+}

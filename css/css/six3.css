@@ -1,0 +1,69 @@
+/*
+UNCOMMENT EACH LINE NUMBER BY SEQUENCE TO SEE EFFECT
+*/
+
+*{
+    margin: 0px;
+}
+body{
+    height:5000px;
+}
+#blue-parent,#cyan-parent,#red-parent,#green-parent{
+    background-color: yellow;
+    border: 1px dashed purple;
+   height: 100px;
+   width: 50%;
+   position:relative;
+   
+
+}
+#blue-parent{
+    background-color:rgb(67, 67, 223);
+
+}
+#red-parent{
+    background-color:rgb(216, 81, 81);
+    /* position: fixed;     top: 20px; left: 50px; */ /*ONE*/
+    /* position: relative;top: 20px; left: 50px; */  /*TWO*/
+    /* position: absolute; top: 20px; left: 50px; */  /*THREE*/
+    /* position: fixed; top: 20px; left: 50px;  */  /*SEVEN*/
+    
+    }
+#green-parent{
+    background-color:rgb(78, 206, 78);
+    /* position: absolute; top: 20px; left: 50px;  */  /*EIGHT*/
+
+}
+#cyan-parent{
+    background-color:rgb(69, 189, 189);  
+    position: relative; top: 20px; left: 50px;    
+}
+#red,#green,#blue,#cyan{
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+    color: black;
+}
+#red{
+     background-color:red;
+    /* position: fixed; top:20px; left:50px; */ /*FOUR*/
+    /* position: absolute; top:20px; left:50px; */  /*FIVE*/
+    /* position: relative; top:20px; left:50px;  */  /*SIX*/
+    /* position: absolute; top:20px; left:50px; */ /*SEVEN-ONE*/
+    /* position: relative;  top:20px; left:50px; */ /*SEVEN-TWO*/
+}
+#green{
+    background-color:green;
+    /* position: fixed; top:10px; left:60px; */ /*EIGHT-ONE*/
+    /* position: absolute; top:10px; left:60px;  */ /*EIGHT-TWO*/
+    /* position: relative; top:10px; left:60px;  */ /*EIGHT-THREE*/
+}
+#blue{
+    background-color:blue;
+}
+#cyan{
+     background-color:cyan;
+    /* position: fixed; top:10px; left:60px; */ /*EIGHT-ONE*/
+    /* position: absolute; top:10px; left:60px;  */ /*EIGHT-TWO*/
+    /* position: relative; top:10px; left:60px;  */ /*EIGHT-THREE*/
+}

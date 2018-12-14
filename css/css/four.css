@@ -1,0 +1,87 @@
+body{
+    background-color: cyan;
+
+}
+div{
+    width: 50%;
+    height: 10%;
+    background-color: yellow;
+    border: coral 10px solid;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+#one{
+    
+    margin: 50px auto;  /*only thiss width can be auto*/
+    /* border-color: black green blue yellow; */
+    
+    /* border-color: black green blue ; */
+    border-color: hsl(71, 83%, 24%) rgba(0, 128, 0, 0.267) blue  transparent; /*transparency level*/
+
+    border-width: 5px 10px 15px 20px;
+    border-style: solid double dashed dotted ;
+    background-color: magenta;
+    border-radius: 20px;
+    color:white;
+
+
+}
+#two{
+
+    border: 10px solid black;
+    background-color: green;
+    /*border-radius: 20%; shaklha w7esh*/
+    /*border-radius: 20px 40px;*/
+    border-radius: 20px /100px 50px;
+
+}
+#three{
+   
+    border: 10px solid black;
+    background-color: red;
+    border-radius: 100% 50%;
+}
+#four{
+    margin-left: 100px;
+    height: 500px;
+    width: calc(100% - 500px);
+    border-radius: inherit; /*from the body*/
+    border-image-source: url("../images/border1.jpg");
+    border-width: 50px;
+    border-image-slice: 200 ; /*fill ht5aly el image tmla el div*/
+    /*the value of slice is the value of the distance where it cut the corners from the original image*/
+    /*el dimensions bta3t el morab3 bta3 el corner ele by2ta3o mn el sora*/
+    border-image-slice: 150 150 180 150; /*top right down left*/
+
+
+}
+#five{
+    /*has corner radius*/
+    border-width: 20px;
+    border-image-source: url("../images/border2.jpg");
+    border-image-slice: 40 ;
+    border-image-width: 10px 20px 15px 30px; /*wa5ed ad eh mn el border width*/ 
+    border-image-repeat: round stretch ; /*shorthand two values only*/
+    -moz-border-image-repeat: space; /*mozilla*/
+    -webkit-border-image-repeat: space; /*chrome*/
+    -ms-border-image-repeat: space; /*edge*/
+    -o-border-image-repeat: space; /*opera*/
+    /*stretch:
+    repeat: هيكرر اللي في النص بين الكورنر بس لما يلاقي حته حتا لو فيه حته زياده هيحط منها جزء
+    round: هيكرر بس هيخلي كل حاجه متظبطه علي قد المقاس بتاع المكان في النص بين الكورنر
+    space : بتحط مسافات زياده في النص بينهم
+    */
+  
+    border-image-outset: 20px; /*el image httla3 bara el border*/
+
+}
+#six{
+  
+    /*border image short hand*/
+    border-image: url("../images/border1.jpg") 100 150 / 10px / 0px round; /*backslash to separate between variables*/
+    /*URL, 4 slices or less, 4 widths, outset repeat*/
+}
+#seven{
+  border-image: linear-gradient(red,black) 30;
+}
+

@@ -1,0 +1,60 @@
+
+#one{
+    display: inline-block;
+    width:100px;
+    height: 100px;
+    background-color: red;
+    transform: translateY(30px);
+    transform: scale(1.5);
+    transform: skewX(-50deg);
+    transform: skewY(20deg);
+
+}
+#two{
+    display: inline-block;
+    width:100px;
+    height: 100px;
+    background-color:blue;
+    transform: scaleX(2); /*bykabar mn both sides*/
+    /* transform: rotateZ(30deg); */
+   
+}
+#three{
+    margin: 50px;
+    width:100px;
+    height: 100px;
+    background-color:yellow;
+    transform: rotateZ(30deg) translateX(20px); /*hylf w b3den yt7arak*/
+    transform-origin: left; /*center of rotation*/
+    transform: scaleX(2); /*only grows from left side*/
+    backface-visibility: hidden; /*lw laf msh hybyn el dahr*/
+}
+
+#container{
+    margin: 50px;
+    width:100px;
+    height: 100px;
+    border: 1px solid black;
+    perspective: 100px;
+    perspective-origin:  right;
+}
+#threeD{
+    width:100px;
+    height: 100px;
+    background-color: cyan;
+    transform:  rotateX(120deg); /*byrga3 lwara (rotates around the center)*/
+    /*perspective : ana wa2f feen bl nsba lel element*/
+    transform-style: preserve-3d; /*3shan lw div bylf w 7aga warah , bdl el z index, 3shan y7s eno 3d*/
+}
+
+#four{
+    font-size:50px;
+}
+#four::before{
+    content: open-quote "123-" attr(id)"-";
+}
+
+#four::after{
+    color:red;
+    content:close-quote;
+}

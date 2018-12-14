@@ -1,0 +1,21 @@
+:empty{
+    background-color: red;
+    height:50px;
+    
+}
+div:empty{
+    background-color:green;
+}
+li:first-child{
+    /*the li is the first child*/
+    background-color:blue;
+}
+li:nth-child(3){
+    background-color: aqua;
+}
+li:not(:first-child){
+    color:red;
+}
+:target{
+    
+}

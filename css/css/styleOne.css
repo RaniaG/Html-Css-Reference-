@@ -1,0 +1,28 @@
+h2,h3{
+    color:red;
+}
+
+.yellowData{
+    color:yellow;
+}
+div p{
+    color:rgb(190, 9, 190);
+}
+div.myClass p{
+    color: blue;
+}
+div.myClass .yellowData.anyclass{
+    color: magenta;
+}
+p, div.myClass .yellowData.anyclass{
+    color:darkblue;
+}
+div>p{
+    background-color: black; 
+}
+div+p{
+    background-color: grey;
+}
+div ~ h3{
+    background-color:green;
+}

@@ -1,0 +1,69 @@
+div{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    /*ba7od el transition hna msh f el hover 3shan y7sal lma y3ml hover w lma yrga3*/
+    transition-property: background-color, width,height; /*anhy propery ha3ml 3leha duration*/
+    transition-duration: 2s;
+    transition-delay: 2s;
+    transition-timing-function: linear; /*(default) same timing for in &out*/
+    transition-timing-function: ease-out; /*ysra3 f el a5r*/
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+div:hover{
+    width:150px;
+    height: 150px;
+    background-color: green;
+   
+}
+p{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    animation-name: rania;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-timing-function: steps(5);  /*hy2sm el animation l steps*/
+    animation-iteration-count: 5; /*hy3ed el animation kam mara*/
+    animation-name: mymove;
+    animation-direction: reverse; /*hy3ks el steps*/
+    animation-direction: alternate; /*yro7 w yrga3 alternatively zy el zig zag 3la el steps*/
+    animation-fill-mode: forwards; /*byo2af 3nd a5r 7aga wsalha msh byrga3 l2aslo*/
+    animation-fill-mode: backwards; /*byrga3 l2aslo*/
+
+}
+p:hover{
+    animation-play-state: paused; /*yo2af ama h3ml hover*/
+}
+@keyframes rania{ /*happens only one time*/
+    from
+    {
+        width:100px;
+        height: 100px;
+        background-color: blue;
+    }
+    to
+    {
+        width:150px;
+        height: 150px;
+        background-color: green;
+    }
+}
+@keyframes mymove{
+    /*percentage of time*/
+    0%{
+        width:100px;
+        height: 100px;
+        background-color: blue;
+    }
+    50%{
+        width:130px;
+        height: 130px;
+        background-color: green;
+    }
+    100%{
+        width:100px;
+        height: 100px;
+        background-color: blue;
+    }
+}

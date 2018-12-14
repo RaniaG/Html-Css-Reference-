@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@font-face{
+    src: url("../fonts/Raleway-Medium.ttf");
+    font-family: "MyRaleway";
+    font-weight: 200;
+}
+@font-face{
+    src: url("../fonts/Raleway-Bold.ttf");
+    font-family: "MyRaleway";
+    font-weight: 700;
+}
+div#one{
+    font-family: 'Roboto', sans-serif;
+    /*font face*/
+    font-weight: 700;
+    font-style: italic;
+}
+div#two{
+    font-family: 'MyRaleway', Arial, sans-serif;   
+    font-size:30px;
+    font-weight: 700;
+}
+a:active{
+    color:red;
+    background-color: aqua;
+}
+a:hover{
+    color:yellow;
+    text-decoration-line: none; 
+}
+span{
+    color:red;
+    font-size: 10px;
+}
+div#three{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-synthesis: weight style; /*ytsaraf f el 2tnen lwa7do*/
+    font-display: fallback;
+    font-synthesis: none; /*lw msh 3ando el weight bta3 el font maytsarafsh mn nafso w yta5ano*/
+    font-weight: 900;
+    font-style: italic;
+
+    /* font-stretch: condensed,expanded,extra-expanded,ultra-expanded; */
+}
+div#four{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 900;
+    font-style: italic;
+    font-variant-position: sub;
+    font-variant-position: super;
+    font-variant-caps: all-small-caps;
+    font-display: fallback;
+    /* font-display: auto;
+    font-display: block;
+    font-display: swap;
+    
+    font-display: optional; */
+
+    
+
+}
+div#five{
+    width:100px;
+    height:100px;
+
+    font-size:10px;
+    background-color: red;
+    line-height: 1.5; /*byzawed space around the line*/
+    text-decoration-line:overline;
+    text-decoration-color:blue;
+    text-decoration-style:dashed;
+    text-decoration-style:wavy;
+
+    text-indent: 30px;/*awl msafa f awl satr*/
+    text-shadow: 1px 1px 0px green,2px 2px 0px yellow; /*x,y,blur,color*/
+    text-transform: capitalize; /*awl kol klma capital*/
+
+
+    overflow:hidden;
+    /*white-space: lma yb2a feh spaces w el line 5ls*/
+    white-space: nowrap; /*lma yb2a mfesh mkan my2ta3sh el white space*/
+    text-overflow: ellipsis;
+
+    white-space: pre; /*byseb kol 7aga zy mahya (pre-line,pre-wrap)*/
+    white-space: normal;
+    overflow-wrap: break-word; /*lw el klma twela yksarha*/
+    word-spacing: 10px; /*spaces between words*/
+    letter-spacing: 2px;
+    word-break:break-all; /*y2ta3 kol el klmat el kbera*/
+    word-break:keep-all; /*yseb kol el klmat el kbera*/
+
+}
+p{
+    writing-mode: vertical-lr; /*mn fo2 lta7t*/
+    text-orientation: upright; /* direction of text->default (sideways)*/
+
+}
+div#six{
+    margin:20px;
+    font-size: 12px;
+
+    column-count: 2;
+    column-rule-style:dashed;
+    column-rule-color: red;
+    column-gap:2px;
+    column-width: 50px;
+}
+div.seven{
+    /* margin:20px; */
+    width:100px;
+    border:2px solid black;
+    display: inline-block;
+    text-align: start;
+    font-size:10px;
+    vertical-align: middle; /*ywastan el divs el inline */
+    /*line-height: 100px; /*3shan a5ly el klam centered f el div*/
+    
+    text-align:justify; /*3shan el text yb2a ad el div*/
+    text-justify: distribute; /*3shan el text yb2a mfhosh spaces kter*/
+
+}

@@ -1,0 +1,50 @@
+*{
+    margin:0px;
+}
+/*list item*/
+#container{
+    height:500px;
+    background-color: yellow;
+    display:list-item;
+    margin:20px
+}
+#red{
+    background-color: red;
+    height: 20%;
+    width: 20%;
+    display:list-item;
+}
+#blue{
+    background-color: blue;
+    height: 20%;
+    width: 20%;
+    display:list-item;
+}
+/*table*/
+.table{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin:20px;
+    /* display: inline-table; /*momken kalam yegy ganbo */
+    display: table;
+    width:50%;
+
+}
+.caption{
+    display:table-caption;
+}
+.header{
+    display: table-header-group;
+}
+.footer{
+    display:table-footer-group;
+}
+.body{
+    display:table-row-group;
+}
+.row{
+    display:table-row;
+}
+.cell{
+    display: table-cell;
+}

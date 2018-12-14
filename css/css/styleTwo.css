@@ -1,0 +1,33 @@
+[att~="ccc"]{
+    color:red;
+}
+[att|="aaa"]{
+    color:yellow;
+}
+p[att|="aaa"]{
+    color:blue;
+}
+div [att|="aaa"]{
+    color:green;
+}
+
+div::before{
+    content:"inserted text ";
+    color: magenta;
+}
+div [att|="aaa"]::after{
+    content:"inserted text";
+    color:magenta;
+}
+h2::first-letter{
+    color:grey;
+}
+h2::first-line{
+    color:blue;
+}
+h3::selection{
+    color:red;
+}
+div:hover{
+    color:lightblue;
+}

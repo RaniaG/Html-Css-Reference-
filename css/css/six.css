@@ -1,0 +1,41 @@
+body{
+    height: 1000px;
+}
+div{
+    width: 25%;
+    height: 50px;
+    border: 1px solid black;
+    color: white;
+    position:static ; /*default*/
+}
+#red{
+    position: fixed; /*relative to view port*/
+    /*keda hwa b2a float msh m7gozlo mkan f el saf7a*/
+    bottom: 20px; /*or top*/ /*mynfa3shs el etnen m3 ba3d*/
+    right: 20px; /*or left*/
+
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+    position: absolute; /* relative to page top*/ /*keda b2a fixed bas relative to page*/
+    right: 5px;
+    /*bardo by float w msh byt7gzlo mkan*/
+    /*top:0px; /*uncomment*/
+}
+#green{
+    position: sticky; 
+    top:10px; /*lazm yb2a beny w ben el top 10 px or more*/
+    background-color: green;
+}
+#yellow{
+    position: relative;  /*relative to its original position in page*/
+    /*floats bs bya5od mkano f el saf7a*/
+    top:10px; /*by7sebha mn mkano el asly msh mn awl el saf7a*/
+    right:20px;
+    background-color: yellow;
+}
+#cyan{
+
+    background-color: cyan;
+}

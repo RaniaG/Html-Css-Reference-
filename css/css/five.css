@@ -1,0 +1,30 @@
+div{
+    margin:50;
+    width: 25%;
+    height: 50px;
+    border: 1px solid black;
+
+}
+
+#one{
+    background-color: aquamarine;
+    box-shadow: -10px 5px 4px grey; 
+    /*box shadow shorthand
+        xoffset, yoffset, bluring
+    */
+}
+#TWO{
+    box-shadow: 0px 0px 10px red;  /*el blur byzawed 7eta zyada*/
+}
+#three{
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px black;
+}
+#four{
+    /*box-shadow: 0px 0px 0px 10px green;  /*byzawed 7eta zyada*/
+    box-shadow: 5px 10px 5px 10px green;  
+}
+#five{
+    box-shadow:inset 0px 0px 5px 5px black;   /*shadow mn gwa*/
+    padding: 10px;
+}

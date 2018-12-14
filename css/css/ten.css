@@ -1,0 +1,67 @@
+/*flex box*/
+
+.container{
+    /* height:100px; */
+    
+    margin:20px;
+
+    border: 1px solid black; 
+    display:flex;  /*the elements inside have the less height or equal to the
+    container but their widths are relative*/
+    width: 100px; /*if the width of the container is less than elements*/
+    width: 50%;
+
+    /*properties*/
+    flex-wrap:wrap; /*default is nowrap*/
+    /*the horizontal axis is row axis and vertical axis is cross axis
+    so when it is wrap-> the overflow is added to cross access*/
+    /* flex-wrap:wrap-reverse;*/ /*wrap bs blsha2lob */
+
+    flex-direction: row-reverse; /* or column*/
+
+    /*shorthand*/
+    flex-flow: wrap row-reverse;
+     /*justify-content: in row axis*/
+    justify-content: space-around; /*by5ly el msafa around kol container is the same*/
+
+    /*align items : in cross axis*/
+    align-items: baseline; /*center the words inside*/
+
+    /*flex-content: spaces between the elements when they are wrapped*/
+    align-content: center;
+    
+}
+.red{
+    background-color: red;
+    width: 200px;
+    order:3;
+    align-self: center;
+}
+.blue{
+    background-color: blue;
+    height: 20%;
+    width: 50px;
+    order:-1;
+    align-self: flex-start;
+
+}
+.green{
+    padding-top:50px;
+    background-color: green;
+    order: 1;
+    /* flex-basis: byzawed 7sb el flex-direction bta3 el container*/
+    flex-basis: 100px;
+    /*flex-shrink:0 msh hys3'ar 5ales, flex-shrink:7 hys3'ar 7 marat asra3 mn el ba2y*/
+    flex-shrink: 7;  /*lazm myb2ash feh fixed width*/
+    /*flex-grow is opposite of flex-shrink*/
+
+    /*shorthand*/
+    flex: 1 1 auto; /*grow ,shrink, basis*/ 
+
+}
+.yellow{
+    background-color: yellow;
+    height: 50px;
+    width: 100px;
+    order:2;
+}

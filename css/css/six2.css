@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+}
+#blue-parent,#cyan-parent,#red-parent,#green-parent{
+    background-color: yellow;
+    border: 1px dashed purple;
+    /*by default position is static so we need to change the parent position in order to affect the children;*/
+
+
+    /*comment each line to see effect*/
+    position: fixed; /*et7ato kolohom fo2 ba3d*/
+    position: relative; top: 50px;
+}
+#red-parent{
+    left: 100px;
+    top: 70px; 
+}
+#red,#green,#blue,#cyan{
+    height:50px;
+    width:50px;
+    border: 1px solid black;
+}
+#red{
+    background-color:red;
+}
+#green{
+    background-color:green;
+}
+#blue{
+    background-color:blue;
+}
+#cyan{
+    background-color:cyan;
+}
