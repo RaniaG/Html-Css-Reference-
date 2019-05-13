@@ -1,6 +1,6 @@
 body{
     background-color: cyan;
-
+    /* color is an inherited property while background color is not */
 }
 div{
     width: 50%;

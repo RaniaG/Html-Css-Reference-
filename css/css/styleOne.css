@@ -18,11 +18,14 @@ p, div.myClass .yellowData.anyclass{
     color:darkblue;
 }
 div>p{
+    /* direct child */
     background-color: black; 
 }
 div+p{
+    /* direct sibling */
     background-color: grey;
 }
 div ~ h3{
+    /* all following siblings */
     background-color:green;
 }

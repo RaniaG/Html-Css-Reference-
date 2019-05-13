@@ -4,6 +4,10 @@ div{
     height: 50px;
     border: 1px solid black;
 
+
+    font-size:20px;
+    text-shadow: 1px 5px 3px gold; 
+
 }
 
 #one{

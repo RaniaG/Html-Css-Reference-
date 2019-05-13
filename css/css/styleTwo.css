@@ -1,7 +1,21 @@
 [att~="ccc"]{
+    /* attribute key contains */
     color:red;
 }
+a[href*="w3schools"]{
+    /* attribute value contains */
+    color:red;
+}
+a[href^="https"]{
+    /* Selects every <a> element whose href attribute value begins with "https" */
+    color:green;
+}
+a[href$="https"]{
+    /* Selects every <a> element whose href attribute value ends with "https" */
+    color:green;
+}
 [att|="aaa"]{
+    /* starts with */
     color:yellow;
 }
 p[att|="aaa"]{

@@ -13,9 +13,25 @@ div{
 }
 .myclass{
     visibility: hidden; /*btseeb mkanha fady*/
+    visibility: collapse /* da shabah el display none bas lel table element msh l2y element*/
+    /* display:none;  leaves no empty space */
+
 }
 .myclass2{
+    display:contents;  /* dah by7ot el contents bas bta3t el div dah mn3'er ay style leeh */
+
+    display: inline; /* lw 7aga m3mola display inline sa3etha el width w height msh hy2saro feha*/
+
+    display: block; /* ynfa3 adelo width w height */
+    display: inline-block; /* inline bas ynfa3 adelo width w height*/
+    display: inline-flex;
+    display: inline-grid;
+    display: inline-table;
+
+    display: list-item; /* Let the element behave like a <li> element*/
+
     display:none; /*no empty space*/
+
 }
 html{
     height: 100%; /*to fill the entire hieght of the page*/
@@ -24,3 +40,5 @@ body{
     height: 100%; 
     background-color: aqua;
 }
+
+
